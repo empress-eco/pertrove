@@ -1,61 +1,70 @@
-## Printrove Integrated Merch Store
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Project Logo">
+  <p align="center">
+    An efficient, versatile tool for managing your merchandise store with ease.
+    <br />
+    <a href="https://empress.eco/"><strong>Explore the Website »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/empress-eco/pertrove/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/pertrove/issues">Request Feature</a>
+  </p>
+</div>
 
-![Mobile Preview Screenshots](.github/images/hero.png)
+## About The Project
 
+Printrove Integrated Merch Store is a powerful solution tailored for businesses and individuals managing merch stores. It offers seamless synchronization with your Printrove account, making it simple to track orders and customize your store to your liking.
+
+### Key Features
+
+* **Product Synchronization**: Synchronize products easily from your Printrove account.
+* **Order Tracking**: Keep track of orders created in the store.
+* **Customizable Product Detail View**: Personalize your product detail view according to your needs.
+* **Invoice Delivery Configuration**: Customize the delivery of your invoices.
+* **Support Link Rendering**: Incorporate support links into your storefront with ease.
+
+### Built With
+
+This project primarily utilizes:
+- [Empress Bench](https://Empressframework.com/docs/user/en/installation)
+
+## Getting Started
+
+### Prerequisites
+
+To set up this app, ensure you have Empress Bench installed and a new site created.
 
 ### Installation
 
-Setup [Frappe Bench](https://frappeframework.com/docs/user/en/installation) and create a new site. Then run the following commands to install this app:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/empress-eco/pertrove.git
+   ```
+2. Install the app with the following commands:
+   ```sh
+   bench get-app NagariaHussain/printrov_merch_store
+   bench --site <site-name> install-app printrov_merch_store
+   ```
 
-```bash
-bench get-app NagariaHussain/printrov_merch_store
-bench --site <site-name> install-app printrov_merch_store
-```
+## Usage
 
-### Store Setup
+Add your credentials and sync data from Printrove, customize your store, and configure invoice delivery with ease. For a more detailed guide, please refer to the [project's documentation](https://grow.empress.eco/).
 
-#### Add Credentials
+## Contributing
 
-1. Open up **Printrove Settings** and add your [Printrove Account](https://printrove.com) credentials:
+Your contributions are highly appreciated! Here's how you can contribute:
 
-    ![Screenshot showing email and password fields](.github/images/setting_credentials.png)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-2. Open the **Printrove Razorpay Settings** form and add your Razorpay credentials:
+## License
 
-    ![Printrove Razorpay Settings](.github/images/setting_credentials.png)
+This project is licensed under the MIT License. Contributions made to this project are also under the MIT License.
 
-#### Syncing Data From Printrove
+## Acknowledgements
 
-You can navigate to **Printrove Settings** and click on the `Sync Products Now` button to sync products from your Printrove account.
-
-> Products are synced in the background once everyday.
-
-### Customizations
-
-There are a few things that you can customize in **Printrove Settings** form:
-
-#### Customizing Product Detail View
-
-This app comes with a default styled product detailed view, you can completely override it using the following settings:
-
-![Screenshot showing custom template fields](.github/images/custom_template.png)
-
-#### Configure Invoice Delivery
-
-You can turn on sending of invoice (PDF attachment via email) and set a print format for the same.
-
-#### Support Link
-
-This link will be used to render "Contact Support" links in your storefront.
-
-### Core DocTypes
-
-1. Store Product: A web-view enabled Product master, synced from Printrove.
-
-2. Store Order: For tracking of orders created in the store.
-
-3. Printrove Category and Printrove Subcategory: Synced from Printrove's available categories of products.
-
-#### License
-
-AGPL 3.0
+A heartfelt thank you to the Empress Community for their indispensable contributions to the tools and technologies that power this project. Their innovation and dedication have been crucial in building the foundation and functionalities of this project. We deeply appreciate their pioneering work and ongoing support.
